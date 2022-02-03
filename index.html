@@ -4,29 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS Datei einbinden-->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!--Import Font-Awesome-->
+    <script
+      src="https://kit.fontawesome.com/9f9e974ace.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Titel der Homepage-->
     <title>Sven Lüchow</title>
   </head>
 
   <body>
-    <!-- Hier beginnt der Headbereich der Website-->
-    <header id="header">
-      <h1>Sven Lüchow</h1>
-      <!--Navigation-->
-      <nav>
-        <a href="#contact">Contact</a>
-        <!--interner Link-->
-        <a href="#socials">Socials</a>
-        <a href="#biography">Biography</a>
-        <a href="#cv">CV</a>
-      </nav>
-    </header>
+    <!--Navigation-->
+    <nav class="navigation" id="top">
+      <a class="button" href="#contact">Contact</a>
+      <a class="button" href="#socials">Socials</a>
+      <a class="button" href="#biography">Biography</a>
+      <a class="button" href="#cv">CV</a>
+    </nav>
 
     <!-- Hier beginnt der Main-Content-->
     <main>
-      <figure>
-        <img src="images/me_new.jpg" alt="" />
+      <figure class="image-fit">
+        <img class="image" src="images/me_new.jpg" alt="" />
         <figcaption>Hey there, that's me!</figcaption>
       </figure>
+
+      <!--Header-->
+      <header id="header">
+        <h1>Sven Lüchow</h1>
+      </header>
 
       <section>
         <ul>
@@ -46,28 +54,38 @@
         </ul>
       </section>
 
-      <adress id="contact">
-        <h3>Feel free to Contact me!</h3>
-        <p>
-          number:
-          <br />
-          +49151 123456
-        </p>
-        <p>
-          Mail:<br />
-          <a href="mailto:#">sven.lyco@hotmail.de</a>
-        </p>
-      </adress>
+      <div class="adress">
+        <adress id="contact">
+          <h3>Feel free to Contact me!</h3>
+          <p>number: +49151 123456</p>
+          <p>
+            Mail:
+            <a class="mail-link" href="mailto:#">sven.lyco@hotmail.de</a>
+          </p>
+        </adress>
+      </div>
 
-      <section id="socials">
-        <h3>Socials</h3>
-        <a href="#"><img src="" alt="Github-Logo" />Github</a>
-        <a href="#"><img src="" alt="Codepen-Logo" />Codepen</a>
-        <a href="#"><img src="" alt="LinkedIn-Logo" />LinkedIN</a>
-        <a href="#"><img src="" alt="XING-Logo" />XING</a>
+      <section class="social-media" id="socials">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/Sven-Lyco"
+              ><i class="fab fa-github-square fa-5x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sven-luechow/"
+              ><i class="fab fa-linkedin fa-5x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.xing.com/profile/Sven_Luechow/cv"
+              ><i class="fab fa-xing-square fa-5x"></i
+            ></a>
+          </li>
+        </ul>
       </section>
 
-      <section id="biography">
+      <section class="bio" id="biography">
         <h3>Biography</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae et
@@ -90,29 +108,47 @@
         </p>
       </section>
 
-      <section id="cv">
+      <section class="cv" id="cv">
         <h3>CV</h3>
+
         <h4>Weiterbildung</h4>
-        <table>
-          <tr>
-            <td>01.2022</td>
-            <td>Trainee Web Development</td>
-            <td>neuefische Coding Bootcamp</td>
-          </tr>
-        </table>
+        <div class="overflow">
+          <table>
+            <tr>
+              <td>01.2022</td>
+              <td>Trainee Web Development</td>
+              <td>neuefische Coding Bootcamp</td>
+            </tr>
+            <tr>
+              <td>08.2013 - 06.2017</td>
+              <td>
+                staatlich geprüfter Techniker Maschinentechnik Schwerpunkt
+                Konstruktionstechnik
+              </td>
+              <td>Berufsbildende Schulen 2 Wolfsburg</td>
+            </tr>
+          </table>
+        </div>
         <h4>Berufserfahrung</h4>
-        <table>
-          <tr>
-            <td>09.2021 - 12.2021</td>
-            <td>Konstrukteur Automatisierungstechnik</td>
-            <td>ibea Gmbh</td>
-          </tr>
-        </table>
+        <div class="overflow">
+          <table>
+            <tr>
+              <td>09.2021 - 12.2021</td>
+              <td>Konstrukteur Automatisierungstechnik</td>
+              <td>ibea Gmbh</td>
+            </tr>
+            <tr>
+              <td>06.2018 - 08.2021</td>
+              <td>Konstrukteur</td>
+              <td>Karl H. Bartels Gmbh</td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer id="footer">
-      <a href="#header">Back to Top</a>
+    <footer class="footer" id="footer">
+      <a class="button" href="#top">Back to Top</a>
     </footer>
   </body>
 </html>
