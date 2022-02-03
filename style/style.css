@@ -1,0 +1,162 @@
+/* Roboto-Fonts-Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Lato-Fonts-Import */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* * = universal selektor wendet box-sizing auf alle Selektoren an*/
+* {
+  box-sizing: border-box;
+}
+/* body verweist auf HTML-Typ body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(225, 225, 225);
+  font-family: "Lato", Arial;
+  color: black;
+}
+
+.navigation {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  text-decoration: none;
+  background-color: rgb(170, 170, 170);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: -5px;
+}
+
+.image-fit {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  margin: 0px;
+  padding: 0px 0px 0px 20px;
+}
+
+header {
+  border-radius: 5px solid black;
+  box-shadow: gray;
+  margin: 0px;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  margin: 5px;
+  text-decoration: underline;
+}
+
+section {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 0px;
+  box-shadow: 3px 8px 10px #888888;
+}
+
+.adress {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.mail-link {
+  color: rgb(77, 107, 136);
+}
+
+.social-media {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+ul {
+  padding: 10px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  color: black;
+}
+
+.bio {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cv {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  height: 10vh;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  width: 33%;
+  text-align: left;
+}
+
+td,
+tr {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.overflow {
+  overflow-x: auto;
+}
+
+.footer {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
